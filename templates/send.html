@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Send Secure Message</h2>
+<form method="POST">
+    <label for="receiver">Recipient Username:</label>
+    <input type="text" name="recipient" required>
+    
+    <label for="message">Message:</label>
+    <textarea name="message" required></textarea>
+    
+    <button type="submit">Send</button>
+</form>
+{% endblock %}

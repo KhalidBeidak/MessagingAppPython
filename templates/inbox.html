@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Your Inbox</h2>
+{% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <li>
+                <strong>From: {{ message.sender }}</strong>
+                <span>{{ message.timestamp }}</span>
+                <p>{{ message.body }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No messages found.</p>
+{% endif %}
+{% endblock %}

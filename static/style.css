@@ -1,0 +1,100 @@
+/* Base Styles with Security-First Colors */
+:root {
+  --primary: #2c3e50;       /* Secure blue-dark */
+  --secondary: #3498db;     /* Trust blue */
+  --danger: #e74c3c;        /* Alert red */
+  --success: #27ae60;       /* Success green */
+  --background: #f8f9fa;    /* Light background */
+  --text: #2c3e50;          /* High contrast for readability */
+  --card-bg: #ffffff;       /* Pure white for content areas */
+  --border: #dfe6e9;        /* Subtle borders */
+}
+
+/* Security-Conscious Typography */
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Secure Container Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Authentication Forms - Anti-Phishing Styling */
+.auth-form {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.auth-form h2 {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Password Field Specific Styling */
+input[type="password"] {
+  font-family: 'Courier New', monospace; /* Helps distinguish password input */
+  letter-spacing: 0.1em;
+}
+
+/* Secure Buttons */
+.btn {
+  display: inline-block;
+  background: var(--secondary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+.btn-danger {
+  background: var(--danger);
+}
+
+.btn-danger:hover {
+  background: #c0392b;
+}
+
+/* Navigation - Clear Security State */
+nav {
+  background: var(--primary);
+  padding: 1rem 2rem;
+  display:
